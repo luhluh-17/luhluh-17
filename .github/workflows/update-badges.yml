@@ -3,10 +3,10 @@ name: Update badges
 on:
   release:
     types: [created]
-  workflow_dispatch: # Put here!!
-  schedule:
+  workflow_dispatch: 
+  # schedule:
     # Runs at 0am UTC every day
-    - cron: "0 0 * * *"
+    # - cron: "0 0 * * *"
 jobs:
   update-readme:
     name: Update Readme with badges
